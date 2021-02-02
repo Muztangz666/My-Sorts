@@ -47,8 +47,9 @@ def UpdateArray(ArrayToSort, LastIndex):
   # Moves the largest value to the end of the array.
   ArrayToSort[MaxIndex], ArrayToSort[LastIndex] = ArrayToSort[LastIndex], ArrayToSort[MaxIndex]
   UpdateArray(ArrayToSort, LastIndex - 1)
-  
-  # Test case.
-  TestArray = [1, 16, 7, 14, 12, 5, 3, 4, 8, 2, 11, 15, 6, 9, 10, 13, 1, 7, 15]
-  UpdateArray(TestArray, len(TestArray) - 1)
-  print("Final Array:", TestArray)
+# End UpdateArray().
+
+# Test case.
+TestArray = [1, 16, 7, 14, 12, 5, 3, 4, 8, 2, 11, 15, 6, 9, 10, 13, 1, 7, 15]
+UpdateArray(TestArray, len(TestArray) - 1)
+print("Final Array:", TestArray)
